@@ -1,0 +1,373 @@
+/*============ Main ============*/
+
+body {
+	margin: 0;
+	padding: 0; 
+	font-family: 'PT Sans', sans-serif;
+}
+
+/* Пока оставим его пустым, может пригодится */
+.wrap {
+
+}
+
+/*============ Logos ============*/
+
+/* У тебя может быть множество лого на странице, так что лучше прописывать какое именно лого */
+.logo-main img {
+	height: 47px;
+}
+
+/*============ Menus ============*/
+
+.menu-top{
+	padding: 0;
+	margin: 0;
+}
+
+.menu-top li{
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+	width: 114px;
+}
+
+.menu-top li a{
+	font-size: 22px;
+	font-weight: bold;
+	text-decoration: none;
+	color: inherit;
+}
+
+.menu-top li a:hover{
+	text-decoration: underline;
+}
+
+/*============ Apps buttons ============*/
+
+.apps{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.apps li{
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	width: 40px;
+	height: 40px;
+	margin-right: 20px;
+}
+
+.apps li:last-child{
+	margin-right: 0px;
+}
+
+.apps a{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background-repeat: no-repeat;
+	background-position: center center;
+
+	/* Скрываем текст, который оставили для SEO */
+	text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.apps a:hover{
+	opacity: .5;
+}
+
+.apps .apps-ios{
+	background-image: url(img/iqhub-logo-ios.png);
+}
+
+.apps .apps-android{
+	background-image: url(img/iqhub-logo-android.png);
+}
+
+.apps .apps-win{
+	background-image: url(img/iqhub-logo-windows.png);
+}
+
+/*============ iPad ============*/
+
+.ipad{
+	width: 316px;
+	height: 470px;
+	background: url(img/iqhub-logo-yellow.png) 61px 191px no-repeat,
+				url(img/iqhub-ipad.png) center center no-repeat;
+	background-size: 200px, 316px;
+}
+
+/*============ Sections ============*/
+
+/* Класс для одной секции. На всякий случай расстягиваем на всю ширину */
+.section{
+	width: 100%;
+}
+
+/* Прописсываем цвета для секции, которые можно использовать */
+.section.section-yellow{
+	background: yellow;
+}
+
+.section.section-white{
+	background: white;
+}
+.section.section-black {
+	background: black;
+}
+/* Внутрений контейнер. Задаем ему ширину и выравниваем по центру. 
+Таким образом section у нас закрасит все, а content послужит контейнером для контента 
+*/
+.section .content{
+	margin: 0 auto;
+	width: 960px;
+}
+
+/*============ Main section ============*/
+
+.section-main{
+	padding-top: 50px;
+	padding-bottom: 108px;
+}
+
+.section-main .block-left{
+	padding-left: 21px;
+}
+
+.section-main .logo-main{
+	margin-top: 13px;
+}
+
+.section-main .description {
+	margin-top: 114px;
+	width: 394px;
+}
+
+.section-main .description p{
+	margin: 0;
+}
+
+.section-main .description h1{
+	margin: 0;
+}
+
+.section-main .description .lead{
+	font-size: 20px;
+    margin-top: 15px;
+    line-height: 24px;
+}
+
+.section-main .description .text{
+	margin-top: 18px;
+    letter-spacing: -0.05px;
+}
+
+.section-main .apps{
+	margin-top: 37px;
+}
+
+.section-main .apps-ios{
+	margin-left: -6px;
+}
+
+.section-main .apps-android{
+	position: relative;
+	top: 2px;
+}
+
+.section-main .apps-win{
+	position: relative;
+	left: 8px;
+    top: 2px;
+}
+
+.section-main .block-right{
+	text-align: right;
+}
+
+.section-main .menu-top{
+	margin-top: 20px;
+	margin-right: 11px;
+}
+
+.section-main .menu-top li:first-child{
+	margin-right: 36px;
+}
+
+.section-main .ipad{
+	margin-top: 64px;
+	margin-left: 28px;
+}
+
+/*============ Features section ============*/
+.section-features {
+	padding: 90px 0px;
+	padding-bottom: 110px;
+}
+.header-and-lead {
+	text-align: center;
+	width: 760px;
+	margin: 10px 200px 40px 180px;
+}
+.header-and-lead h1 {
+	margin-bottom: 0;
+	
+	padding-right: 170px;
+}
+.section-features .header-and-lead p {
+	margin: 10px;
+	font-size: 19px;
+	padding: 0;
+}
+hr {
+	width: 950px;
+	margin-left: 10px;
+}
+.features-boxes {
+	margin-left: 15px;
+	margin-top: 47px;
+}
+.small-box {
+ 	margin-left: 57px;  
+	float: left;
+	width: 260px;
+	}
+.small-box img {
+	padding-right: 30px;
+	float: left;
+}
+.names, .features-text {
+	margin-left: 65px;
+}
+.names {
+  font-size: 22px;
+	text-transform: capitalize;
+	margin-top: -4px;  
+}
+
+.small-box:first-child {
+	margin-left: 10px;
+}
+
+.small-box:nth-child(n+4) {
+	margin-left: 0px;
+
+}
+.small-box:nth-child(n+5) {
+	margin-left: 60px;
+}
+.features-text {
+	margin-bottom: 0;
+}
+
+
+/*============ Black section ============*/
+.section-keep-in-touch {
+	padding-top: 70px;
+}
+.section-black .header-and-lead h1 {	
+	color: yellow;
+}
+.header-and-lead p {
+	color: grey;
+	padding-right: 50px;
+}
+.submit-form {
+	padding-left: 110px;
+}
+#upp {
+	text-transform: uppercase;
+}
+#mail {
+	width: 540px;
+	height: 44px;
+	border-radius: 5px;
+	border: none;
+	font-size: 14px;
+	padding: 2px 22px;
+}
+input[type=submit] {
+	background: yellow;
+	height: 45px;
+	width: 120px;
+	border: none;
+	cursor:pointer;
+	border-radius: 5px;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 15px;
+	margin-left: 20px;
+}
+.icons {
+	margin: 70px;
+	padding-left: 240px;
+}
+.icons img {
+		padding: 0px 10px;
+	margin: 10px 5px 0px 5px;	
+}
+.footer {
+	padding-top: 30px;
+}
+.footer ul {
+	color: white;
+	list-style-type:none;
+	font-size: 16px;
+	float: left;	
+	text-align: left;
+	padding-right: 80px;
+	display: inline-block;
+
+}
+.footer a {
+	color: white;
+	text-decoration: none;
+}
+
+#upper {
+	text-transform: uppercase;
+}
+#capitalize {
+	text-transform: capitalize;
+}
+.first ul{
+	padding-left: 20px;
+}
+.third ul {
+	padding-left: 15px;
+	padding-right: 70px;
+}
+.fifth ul {
+	padding-left: 8px;
+}
+
+/*============ Help functions ============*/
+
+/* Чисто вспомогательные функции, что бы по 100500 раз не прописывать флоаты */
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+/*============ Clearfix ============*/
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.cf:after {
+    clear: both;
+}
+.cf {
+    *zoom: 1;
+}

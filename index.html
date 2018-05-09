@@ -2,53 +2,158 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>IQHub-2</title>
+	<link rel="stylesheet" href="main.css">
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<div style="width: 750px; margin: auto;">
-		<div style="text-align: center">
-			<h1><strong>The Darknet and the Future of Content Distribution</strong></h1>
-				<p><em>Peter Biddle, Paul England, Marcus Peinado, and Bryan Willman</em></p>
-				<p><strong>Microsoft Corporation</strong></p>
-		</div>
-		<div>
-			<h2><strong>1 Introduction</strong></h2>
-				<p><strong>People have always copied things. In the past, most items of value were physical objects.  Patent law and economies of scale meant that small scale copying of physical objects was usually uneconomic, and large-scale copying (if it infringed) was stoppable using policemen and courts.  Today, things of value are increasingly less tangible: often they are just bits and bytes or can be accurately represented as bits and bytes.</strong></p>
-				<p>The widespread deployment of packet-switched networks and the huge advances in computers and codec-technologies has made it feasible (and indeed attractive) to deliver such digital works over the Internet.  This presents great opportunities and great challenges.  The opportunity is low-cost delivery of personalized, desirable high-quality content.  The challenge is that such content can be distributed illegally.  Copyright law governs the legality of copying and distribution of such valuable data, but copyright protection is increasingly strained in a world of programmable computers and high-speed networks.</p>
-				<p style="text-align: center;"><em>For example, consider the staggering burst of creativity by authors of computer programs that are designed to share audio files.  This was first popularized by Napster, but today several popular applications and services offer similar capabilities.  CD-writers have become mainstream, and DVD-writers may well follow suit.  Hence, even in the absence of network connectivity, the opportunity for low-cost, large-scale file sharing exists.</em></p>
-		</div>
-		<div>
-			<h2><strong>2  The Darknet</strong></h2>
-				<p>Throughout this paper, we will call the shared items (e.g. software programs, songs, movies, books, etc.) objects. <a href="">The persons who copy objects</a> will be called users of the darknet, and the computers used to share objects will be called hosts.</p>
-				<p>The darknet is the distribution network that emerges from the injection of objects according to assumption 1 and the distribution of <strong>those objects according to assumptions 2 and 3.</strong></p>
-				<p>One implication of the first assumption is that any content protection system will leak popular or interesting content into the darknet, because some fraction of users--possibly experts–will overcome any copy prevention mechanism or because the object will enter the darknet before copy protection occurs.</p>
-				<p><strong>The term “widely distributed” </strong>is intended to capture the notion of mass market distribution of objects to thousands or millions of practically anonymous users. <a href="">This is in contrast to the protection of military</a>, industrial, or personal secrets, which are typically not widely distributed and are not the focus of this paper.</p>
-			<h3>2.1 Central Internet Servers</h3>
-				<p>By 1998, a new form of the darknet began to emerge from technological advances in several areas. The internet had become mainstream, and as such its protocols and infrastructure could now be relied upon by anyone seeking to connect users with a centralized service or with each other. The continuing fall in the price of storage together with advances in compression technology had also crossed the threshold at which storing large numbers of audio files was no longer an obstacle to mainstream users. Additionally, the power of computers had crossed the point at which they could be used as rendering devices for multimedia content. Finally, “CD ripping” became a trivial method for content injection.</p>
-				<img src="img_01.jpg" alt="двигатель самолёта" style="float: left; width: 40%">
-				<p><em><b>The first embodiments of this new darknet were central internet servers with large collections of MP3 audio files. A fundamental change that came with these servers was the use of a new distribution network: The internet displaced the sneaker net – at least for audio content. This solved several problems of the old darknet.  First, latency was reduced drastically.</b></em></p>
-				<p>Secondly, and more importantly, discovery of objects became much easier because of simple and powerful search mechanisms – most importantly the general-purpose world-wide-web search engine. The local view of the small world was replaced by a global view of the entire collection accessible by all users. The main characteristic of this form of the darknet was centralized storage and search – a simple architecture that mirrored mainstream internet servers.</p>
-			<h3>2.2 Central Internet Servers</h3>
-				<p style="text-align: right"><em>Centralized or quasi-centralized distribution and service networks make sense for legal online commerce. Bandwidth and infrastructure costs tend to be low, and having customers visit a commerce site means the merchant can display adverts, collect profiles, and bill efficiently.  Additionally, management, auditing, and accountability are much easier in a centralized model.</em></p>
-				<p style="text-align: center;"><img src="img_02.jpg" alt="висящая мышка" style="width: 40%; margin-left: 10px; margin-top: 10px; margin-bottom: 10px"></p>
-				<p>However, centralized schemes work poorly for illegal object distribution because large, central servers are large single points of failure: If the distributor is breaking the law, it is relatively easy to force him to stop. Early MP3 Web and FTP sites were commonly “hosted” by universities, corporations, and ISPs.  Copyright-holders or their representatives sent “cease and desist” letters to these web-site operators and web-owners citing copyright infringement and in a few cases followed up with legal action [15].  The threats of legal action were successful attacks on those centralized networks, and MP3 web and FTP sites disappeared from the mainstream shortly after they appeared.</p>
-				<p>
-					<ul>
-						<li>However, centralized schemes work poorly for illegal object distribution because large, central servers are large single points of failure</li>
-						<li>Early MP3 Web and FTP sites were commonly “hosted” by universities, corporations, and ISPs. Copyright-holders or their representatives sent “cease and desist” letters</li>
-						<li>The threats of legal action were successful attacks on those centralized networks, and MP3 web and FTP sites disappeared from the mainstream shortly after they appeared.</li>
+	<div class="wrap">
+		<!-- 
+			Для выделения блоков кода добавляй открывающиеся и закрывающиеся комментарии как показано ниже. Если для обозначения одного блока ты используешь только один комментарий, то ты видешь где блок кода начинается, но не видешь где он заканчивается.
+		-->
+		<!-- Main section -->
+		<div class="section section-yellow section-main">
+			<div class="content cf">
+				<div class="block-left left">
+					<!-- <span class="logo-main">
+						<img src="img/iqhub-logo-black.png" alt="black logo">
+					</span> -->
+					<!-- Не знаю чего, но ты лого закрыла в тегах span. В данном случае лучше в div -->
+					<div class="logo-main">
+						<a href="#">
+							<img src="img/iqhub-logo-black.png" alt="black logo">
+						</a>
+					</div>
+					<div class="description">
+						<h1>Inspire your inspiration</h1>
+						<p class="lead">Simple to use for your app, products showcase and your inspiration</p>
+						<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis. Proin viverra risus a eros volutpat tempor. In quis arcu et eros porta lobortis sit</p>
+						<ul class="apps">
+							<!-- Добавил текст в ссылки, так как это полезно для SEO, но с помщью css скрыл его -->
+							<li><a href="#" class="apps-ios">ios application</a></li>
+							<li><a href="#" class="apps-android">android application</a></li>
+							<li><a href="#" class="apps-win">windows application</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="block-right right">
+					<ul class="menu-top">
+						<li><a href="#">Features</a></li>
+						<li><a href="#">Support</a></li>
+						<li><a href="#">Blog</a></li>
 					</ul>
-				</p>
-				<p>
-					<ol>
-						<li>Secondly, and more importantly, discovery of objects became much easier because of simple and powerful search mechanisms – most importantly the general-purpose</li>
-						<li>distributor is breaking the law, it is relatively easy to force him to stop.  Early MP3 Web and FTP sites 	were commonly “hosted” by universities</li>
-						<li>By 1998, a new form of the darknet began to emerge from technological advances in several areas. The internet had become mainstream, and as such its protocols and infrastructure</li>
-					</ol>
-				</p>
+					<div class="ipad"></div>
+				</div>
+			</div>
 		</div>
-		<pre style="white-space: pre-line;">
-	!>div[style="width: 750px; margin: auto;"]>(div[style="text-align: center"]>(h1>strong{The Darknet and the Future of Content Distribution})+(p>em{Peter Biddle, Paul England, Marcus Peinado, and Bryan Willman})+(p>strong{Microsoft Corporation}))+(div>(h2>strong{1 Introduction})+(p>strong{People have always copied things. In the past, most items of value were physical objects.  Patent law and economies of scale meant that small scale copying of physical objects was usually uneconomic, and large-scale copying (if it infringed) was stoppable using policemen and courts.  Today, things of value are increasingly less tangible: often they are just bits and bytes or can be accurately represented as bits and bytes.})+p{The widespread deployment of packet-switched networks and the huge advances in computers and codec-technologies has made it feasible (and indeed attractive) to deliver such digital works over the Internet.  This presents great opportunities and great challenges.  The opportunity is low-cost delivery of personalized, desirable high-quality content. The challenge is that such content can be distributed illegally.  Copyright law governs the legality of copying and distribution of such valuable data, but copyright protection is increasingly strained in a world of programmable computers and high-speed networks.}+(p[style="text-align: center;"]>em{For example, consider the staggering burst of creativity by authors of computer programs that are designed to share audio files.  This was first popularized by Napster, but today several popular applications and services offer similar capabilities.  CD-writers have become mainstream, and DVD-writers may well follow suit.  Hence, even in the absence of network connectivity, the opportunity for low-cost, large-scale file sharing exists.}))+div>(h2>strong{2  The Darknet})>(p{Throughout this paper, we will call the shared items (e.g. software programs, songs, movies, books, etc.) objects.}>a{The persons who copy objects}+{will be called users of the darknet, and the computers used to share objects will be called hosts.})+(p{The darknet is the distribution network that emerges from the injection of objects according to assumption 1 and the distribution of }>strong{those objects according to assumptions 2 and 3.})+p{One implication of the first assumption is that any content protection system will leak popular or interesting content into the darknet, because some fraction of users--possibly experts–will overcome any copy prevention mechanism or because the object will enter the darknet before copy protection occurs.}+(p>strong{The term “widely distributed” }+{is intended to capture the notion of mass market distribution of objects to thousands or millions of practically anonymous users. }+a{This is in contrast to the protection of military}+{industrial, or personal secrets, which are typically not widely distributed and are not the focus of this paper.})+h3{2.2 Central Internet Servers}+(p[style="text-align: right"]>em{Centralized or quasi-centralized distribution and service networks make sense for legal online commerce. Bandwidth and infrastructure costs tend to be low, and having customers visit a commerce site means the merchant can display adverts, collect profiles, and bill efficiently.  Additionally, management, auditing, and accountability are much easier in a centralized model.})+(p>img["img_01.jpg" alt="двигатель самолёта" style="float: left; width: 40%"])+(p>em>b{The first embodiments of this new darknet were central internet servers with large collections of MP3 audio files. A fundamental change that came with these servers was the use of a new distribution network: The internet displaced the sneaker net – at least for audio content. This solved several problems of the old darknet.  First, latency was reduced drastically.})+p{Secondly, and more importantly, discovery of objects became much easier because of simple and powerful search mechanisms – most importantly the general-purpose world-wide-web search engine. The local view of the small world was replaced by a global view of the entire collection accessible by all users. The main characteristic of this form of the darknet was centralized storage and search – a simple architecture that mirrored mainstream internet servers.}+h3{2.2 Central Internet Servers}+(p[style="text-align: right"]>em{Centralized or quasi-centralized distribution and service networks make sense for legal online commerce. Bandwidth and infrastructure costs tend to be low, and having customers visit a commerce site means the merchant can display adverts, collect profiles, and bill efficiently.  Additionally, management, auditing, and accountability are much easier in a centralized model.})+(p[style="text-align: center;"]>img["img_02.jpg" alt="висящая мышка" style="width: 40%; margin-left: 10px; margin-top: 10px; margin-bottom: 10px"])+p{However, centralized schemes work poorly for illegal object distribution because large, central servers are large single points of failure: If the distributor is breaking the law, it is relatively easy to force him to stop. Early MP3 Web and FTP sites were commonly “hosted” by universities, corporations, and ISPs.  Copyright-holders or their representatives sent “cease and desist” letters to these web-site operators and web-owners citing copyright infringement and in a few cases followed up with legal action [15].  The threats of legal action were successful attacks on those centralized networks, and MP3 web and FTP sites disappeared from the mainstream shortly after they appeared.}+(p>ul>li{However, centralized schemes work poorly for illegal object distribution because large, central servers are large single points of failure}+li{Early MP3 Web and FTP sites were commonly “hosted” by universities, corporations, and ISPs. Copyright-holders or their representatives sent “cease and desist” letters}+li{The threats of legal action were successful attacks on those centralized networks, and MP3 web and FTP sites disappeared from the mainstream shortly after they appeared.})+p>ol>li{Secondly, and more importantly, discovery of objects became much easier because of simple and powerful search mechanisms – most importantly the general-purpose}+li{distributor is breaking the law, it is relatively easy to force him to stop.  Early MP3 Web and FTP sites 	were commonly “hosted” by universities}+li{By 1998, a new form of the darknet began to emerge from technological advances in several areas. The internet had become mainstream, and as such its protocols and infrastructure}</pre>
+		<!-- /Main section -->
+		<!-- White section -->
+		<div class="section section-white section-features">
+			<div class="content">
+				<div class="header-and-lead">
+					<h1>IQ hub features</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro molestias atque aspernatur voluptate quisquam, nihil ratione! Enim corporis impedit laboriosam assumenda!</p>
+				</div>
+				<hr>
+				<div class="features-boxes cf">
+						<div class="small-box">
+							<img src="img/iqhub-logo-01.png" alt="small ipad">						
+							<p class="names">Fully responsive</p>
+							<p class="features-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita assumenda optio dignissimos, necessitatibus eligendi labore!</p>
+						</div>
+						<div class="small-box">
+							<img src="img/iqhub-logo-03.png" alt="lemon">						
+							<p class="names">Fully layered PSD</p>					
+							<p class="features-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem consectetur ea atque quas excepturi? Doloremque.</p>						
+						</div>
+						<div class="small-box">
+							<img src="img/iqhub-logo-02.png" alt="folder">						
+							<p class="names">Font awesome icons</p>
+							<p class="features-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil molestias enim quod quaerat expedita neque culpa, blanditiis. Nesciunt, ducimus.</p>						
+						</div>				
+						<div class="small-box">
+							<img src="img/iqhub-logo-04.png" alt="tags">						
+							<p class="names" id="upp">html3 & css3</p>
+							<p class="features-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque possimus maxime molestias? Corporis cumque in perspiciatis, distinctio libero.</p>						
+						</div>
+						<div class="small-box">
+							<img src="img/iqhub-logo-05.png" alt="mail">						
+							<p class="names">Email template</p>
+							<p class="features-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas necessitatibus doloribus nulla quaerat quo, esse odit.</p>						
+						</div>
+						<div class="small-box">
+							<img src="img/iqhub-logo-06.png" alt="flag">						
+							<p class="names">Free to download</p>
+							<p class="features-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, blanditiis molestiae inventore nam, temporibus fuga quia distinctio cupiditate ea!</p>						
+						</div>				
+				</div>
+			</div>
+		</div>
+		<!-- /White section -->
+		<!--  Black section -->
+		<div class="section section-black section-keep-in-touch">
+			<div class="content">
+				<div class="header-and-lead">
+					<h1>Keep in touch with us</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem repellendus fuga tempore asperiores, inventore, dolores quas mollitia ipsum veritatis omnis officia.</p>
+				</div>
+				<div class="submit-form">
+					<form action="#" method="post">
+						<label for="mail"><input type="email" name="email-field" id="mail" placeholder="Enter your email to update"></label>
+						<input type="submit" value="Submit">
+					</form>
+				</div>
+				<div class="icons">
+					<a href="#"><img src="img/iqhub-logo-facebook.png" alt="facebook-button"></a>
+					<a href="#"><img src="img/iqhub-logo-twitter.png" alt="twitter-button"></a>
+					<a href="#"><img src="img/iqhub-logo-google.png" alt="google-button"></a>
+					<a href="#"><img src="img/iqhub-logo-pinterest.png" alt="pinterest-button"></a>
+				</div>
+				<hr>
+				<div class="footer cf">
+					<div class="first">
+						<ul>
+						<li id="upper">halovietnam ltd</li>
+						<li id="capitalize">66, dang van ngu, dong da</li>
+						<li>Hanoi, Vietnam</li>
+						<li>contact@halovietnam.com</li>
+						<li>+844 35149182</li>
+						</ul>
+					</div>
+					<div class="second">
+						<ul>
+							<li><a href="#">Examples</a></li>
+							<li><a href="#">Shop</a></li>
+							<li><a href="#">License</a></li>
+						</ul>
+					</div>
+					<div class="third">
+						<ul>
+							<li><a href="#">Contact</a></li>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Privacy</a></li>
+							<li><a href="#">Terms</a></li>
+						</ul>
+					</div>
+					<div class="fourth">
+						<ul>
+							<li><a href="#">Download</a></li>
+							<li><a href="#">Support</a></li>
+							<li><a href="#">Documents</a></li>
+						</ul>
+					</div>
+					<div class="fifth">
+						<ul>
+							<li><a href="#">Media</a></li>
+							<li><a href="#">Blog</a></li>
+							<li><a href="#">Forums</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>			
+		</div>
+		<!--  /Black section -->
 	</div>
 </body>
 </html>
+
