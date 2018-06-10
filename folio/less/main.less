@@ -1,0 +1,496 @@
+@font-face{
+  font-family: 'BebasNeue';
+   src: url(bebas/BebasNeue-Regular.otf);
+   font-weight: normal;
+}
+
+
+
+/*============= Vars =============*/
+@font-main: 'BebasNeue';
+@font-second: 'Open Sans';
+@color: white;
+@font-header: 48px;
+@font-medium: 36px;
+
+/*============= Main =============*/
+body, html {
+	margin: 0;
+	padding: 0;
+	font-family: @font-main, sens-serif;
+	width: 100%;
+}
+/*============ Sections ============*/
+.section {
+	width: 100%;
+ 	.content {  
+	margin: 0 auto;
+	width: 1000px;
+	color: @color;
+	}
+}
+.uppercase {
+	text-transform: uppercase;
+}
+.capitalize {
+	text-transform: capitalize;
+}
+
+
+/*============= Slogan section =============*/
+.section.header {
+	background: url("img/camera.png") 0px -160px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.header {
+	.content {
+	padding: 10px 0px 30px 300px;  	
+	}
+}
+.slogan {
+	
+	h1 {font-family: @font-main;
+		font-size: 90px;		
+		line-height: 0.7;
+		margin-bottom: 0;
+		.new-line {
+			display: block;
+		}
+	}
+	p {font-family: @font-main;
+		font-size: @font-medium;
+		margin-top: 0;
+			
+	}
+}
+/*============= Menu section =============*/
+.section.menu {
+	background: #000000;
+	opacity: 0.8;
+}
+.menu {
+	.logo {
+		font-size: 48px;
+		display: inline;
+		float: left; 
+	}
+	p {
+		 margin-top: 20px;
+	}
+}
+.main-menu {
+	ul{
+		display: inline-block;
+		margin-left: 340px;
+	}
+	li{
+		display: inline-block;
+		list-style: none;
+		padding: 10px;
+		margin: 10px;
+		font-size: 18px;
+		&:hover {
+			  border-bottom: 1px solid #66CDAA;
+		}
+	}
+		a{display: inline-block;			
+			color: inherit;
+			text-decoration: none;
+			&:hover {
+				color: #66CDAA;
+
+			}
+		}
+	.icons{
+	display: inline-block;
+	margin-left: 30px;
+	position: relative;
+	top: 10px;
+	img {
+		width: 35px;
+  		margin-left: 10px;
+  		border-radius: 50%;
+  		overflow: hidden;
+	}
+	.linkedin:hover {
+		background-color: #1E90FF;
+	}
+	.facebook:hover {
+		background-color: #4169E0;
+	}
+	.unknown:hover {
+		background-color: #228B22;
+	}
+	.twitter:hover {
+		background-color: #87CEFA;
+	}
+}
+}
+
+/*============= Portfolio section =============*/
+.section.portfolio {
+	background: #66CDAA;
+}
+.portfolio {
+	h2 {
+		font-size: @font-header;
+		font-weight: normal;
+		text-align: center;
+		margin: 0;
+		padding-top: 30px;
+
+	}
+	p {
+		font-size: 24px;
+		text-align: center;
+	}
+	.people-photos {
+		
+		width: 100%; /* 1200px */
+		//height: 280px;		
+		.two-photos {
+			display: flex;
+			width: 100%; /* 1200px */
+			
+			
+			img {
+				width:50%;
+				height: 300px;
+				&:hover{
+					background-color: #66CDAA;
+					opacity: .3;
+				}				
+			}
+		}
+		.four-photos-high {
+			display: flex;
+			width: 100%; /* 1200px */
+			height: 500px;
+			//padding-bottom: 60px;
+			img {
+				width:25%;
+				height: 500px;
+				&:hover{
+					background-color: #66CDAA;
+					opacity: .3;
+				}					
+			}
+		}
+		.four-photos-square {
+			display: flex;
+			width: 100%; 
+			img {
+				width: 25%;
+				height: 300px;
+				&:hover{
+					background-color: #66CDAA;
+					opacity: .3;
+				}	
+			}
+		}
+		.three-photos {
+			display: flex;
+			width: 100%;
+			img {
+				width: 25%;
+				height: 300px;
+				&:hover{
+					background-color: #66CDAA;
+					opacity: .3;
+				}	
+			} 
+			.raspberry{
+				width: 50%;
+				height: 300px;
+				&:hover{
+					background-color: #66CDAA;
+					opacity: .3;
+				}	
+			}			
+		}
+		.three-photos-footer {
+			display: flex;
+			width: 100%;
+			img {
+				width: 25%;
+				height: 300px;
+				&:hover{
+					background-color: #66CDAA;
+					opacity: .3;
+				}	
+			}
+			.dreamcatcher {
+				width: 50%;
+				height: 300px;
+				&:hover{
+					background-color: #66CDAA;
+					opacity: .3;
+				}	
+			}
+		}
+	}
+}
+/*============= Sunshine section =============*/
+.section.sunshine {
+	background: url("img/sunshine.png") 0px -300px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.sunshine {
+	.content {		
+		font-weight: bold;
+	}
+	.medium {
+		font-size: @font-medium;
+		text-align: center;
+		width: 800px;
+		margin: auto;
+	}
+	.smaller {
+		font-size: 24px;
+		padding-left: 780px;
+		padding-bottom: 50px;
+		margin: 0;
+	}
+	.fa-quote-left {
+		padding-top: 50px;
+		padding-left: 50px;
+	}
+	.fa-quote-right {
+		padding-left: 900px; 
+	}
+} 
+/*============= News section =============*/
+.section.news {
+	background-color: #C0C0C0;
+}
+.news {
+	font-family: @font-second, sens-serif;
+
+	h2 {
+		font-family: @font-main, sens-serif;
+		font-size: @font-header;
+		text-align: center;
+		margin: 0;
+		padding-top: 60px;
+		color: black;
+	}
+	.news-left {
+		float: left;
+		width: 500px;
+		.date {
+			background-color: #66CDAA;
+			display: inline-block;
+			p {
+				margin: 0;
+  				padding: 3px 25px;
+			}
+		}		
+			.fa-tags {
+				color: #66CDAA;
+				margin-left: 190px;
+			}			 
+		.orange-text {
+				color: #FF4500;
+				display: inline-block;
+			}
+		.right {
+			padding-left: 350px;
+			padding-bottom: 70px;
+			a {
+				color: inherit;
+				text-decoration: none;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+		.green {
+			color: #66CDAA;
+		}
+		.grey {
+			color: grey;
+		}
+		img {
+			width: 100%;
+		}
+	}
+	.news-right {
+		float: right;
+		width: 390px;
+			ul{
+			padding: 0;
+			margin-bottom: 70px;
+			}
+			li{
+			display: inline-block;
+			list-style: none;
+			padding: 1px 10px;
+			background-color: #66CDAA;
+			margin-bottom: 10px;
+			&:hover {
+					background-color: #FF4500;
+			}
+			a{display: inline-block;							
+				color: inherit;
+				text-decoration: none;
+			}
+		}
+		.green {
+			color: #66CDAA;
+			font-family: @font-main, sens-serif;
+			font-size: 18px;
+		}
+		.italic {
+			font-style: italic;
+			font-size: 20px;
+			color: grey;
+		}
+		.blog {
+			font-family: Arial;
+			color: black;
+		}
+		.comment {
+			color: black;			
+			img {
+				border-radius: 3px;
+				float: left;
+  				margin-right: 10px;
+			}
+		}
+		.comment-date {
+			color: #FF4500;
+			display: block;
+		}
+	}
+}
+/*============= Firms-logos section =============*/
+.section.firms-logos {
+	background-color: #A9A9A9;
+}
+.firms-logos {
+		img {		
+		width: 150px;
+  		margin: 60px 40px;
+  		opacity: 0.2;
+	}
+}
+/*============= Bio section =============*/
+.section.bio {
+	background-color: #FF6347;
+}
+#bio {
+	font-family: @font-main, sens-serif;
+	font-size: @font-header;
+	color: black;
+	text-align: center;
+}
+.bio {
+	font-family: @font-second, sens-serif;
+	.bio-left {
+		float: left;
+		width: 300px;
+		.icons {
+			position: relative;
+			top: -100px;
+			left: 50px;
+			img {
+				 width: 35px;
+				margin-left: 10px;
+				border-radius: 50%;
+				overflow: hidden;
+			}
+		.linkedin:hover {
+		background-color: #1E90FF;
+		}
+		.facebook:hover {
+			background-color: #4169E0;
+		}
+		.unknown:hover {
+			background-color: #228B22;
+		}
+		.twitter:hover {
+			background-color: #87CEFA;
+		}
+		}
+		.medium {
+			font-family: @font-main, sens-serif;
+			text-align: center;
+			font-size: @font-medium;
+		}
+		.white-circle {
+			background-color: white;
+			border-radius: 50%;
+			overflow: hidden;
+			width: 200px;
+			height: 200px;
+			margin: 0 auto;
+		}
+		.monkey {
+			position: relative;
+			top: -170px;
+			right: -70px;
+		}
+	}
+	.bio-right {
+		float: right;
+		width: 450px;
+	}
+}
+/*============= Footer section =============*/
+.section.footer {
+	background: url("img/bridge.png") no-repeat center -100px;
+	background-size: cover;
+}
+.footer {
+	font-family: @font-main, sens-serif;
+	text-align: center;
+	font-weight: bold;
+	#contacts {
+		font-size: @font-header;
+		margin: 0;
+		padding-top: 50px;
+		padding-bottom: 0;
+		color: black;
+	}
+	.tel {
+		font-size: @font-header;
+		margin-top: 35px;
+		margin-bottom: 15px;
+	}
+	.with-border {
+		width: 650px;
+		border: 4px solid white;
+		margin: 0 auto;  		
+  		font-size: 60px;
+	}
+	.medium {		
+		font-size: 30px;
+		margin-top: 20px;
+		font-weight: normal;
+	}
+	.capitalize {
+		font-family: @font-second;
+		font-size: 14px;
+		padding-top: 100px;
+		padding-bottom: 20px;
+		margin: 0;
+		.fa-copyright {
+			margin-right: 5px;
+		}
+	}
+}
+/*============ Clearfix ============*/
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.cf:after {
+    clear: both;
+}
+.cf {
+    *zoom: 1;
+}

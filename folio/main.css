@@ -1,0 +1,469 @@
+@font-face {
+  font-family: 'BebasNeue';
+  src: url(bebas/BebasNeue-Regular.otf);
+  font-weight: normal;
+}
+/*============= Vars =============*/
+/*============= Main =============*/
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'BebasNeue', sens-serif;
+  width: 100%;
+}
+/*============ Sections ============*/
+.section {
+  width: 100%;
+}
+.section .content {
+  margin: 0 auto;
+  width: 1000px;
+  color: white;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+/*============= Slogan section =============*/
+.section.header {
+  background: url("img/camera.png") 0px -160px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header .content {
+  padding: 10px 0px 30px 300px;
+}
+.slogan h1 {
+  font-family: 'BebasNeue';
+  font-size: 90px;
+  line-height: 0.7;
+  margin-bottom: 0;
+}
+.slogan h1 .new-line {
+  display: block;
+}
+.slogan p {
+  font-family: 'BebasNeue';
+  font-size: 36px;
+  margin-top: 0;
+}
+/*============= Menu section =============*/
+.section.menu {
+  background: #000000;
+  opacity: 0.8;
+}
+.menu .logo {
+  font-size: 48px;
+  display: inline;
+  float: left;
+}
+.menu p {
+  margin-top: 20px;
+}
+.main-menu ul {
+  display: inline-block;
+  margin-left: 340px;
+}
+.main-menu li {
+  display: inline-block;
+  list-style: none;
+  padding: 10px;
+  margin: 10px;
+  font-size: 18px;
+}
+.main-menu li:hover {
+  border-bottom: 1px solid #66CDAA;
+}
+.main-menu a {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+}
+.main-menu a:hover {
+  color: #66CDAA;
+}
+.main-menu .icons {
+  display: inline-block;
+  margin-left: 30px;
+  position: relative;
+  top: 10px;
+}
+.main-menu .icons img {
+  width: 35px;
+  margin-left: 10px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.main-menu .icons .linkedin:hover {
+  background-color: #1E90FF;
+}
+.main-menu .icons .facebook:hover {
+  background-color: #4169E0;
+}
+.main-menu .icons .unknown:hover {
+  background-color: #228B22;
+}
+.main-menu .icons .twitter:hover {
+  background-color: #87CEFA;
+}
+/*============= Portfolio section =============*/
+.section.portfolio {
+  background: #66CDAA;
+}
+.portfolio h2 {
+  font-size: 48px;
+  font-weight: normal;
+  text-align: center;
+  margin: 0;
+  padding-top: 30px;
+}
+.portfolio p {
+  font-size: 24px;
+  text-align: center;
+}
+.portfolio .people-photos {
+  width: 100%;
+  /* 1200px */
+}
+.portfolio .people-photos .two-photos {
+  display: flex;
+  width: 100%;
+  /* 1200px */
+}
+.portfolio .people-photos .two-photos img {
+  width: 50%;
+  height: 300px;
+}
+.portfolio .people-photos .two-photos img:hover {
+  background-color: #66CDAA;
+  opacity: .3;
+}
+.portfolio .people-photos .four-photos-high {
+  display: flex;
+  width: 100%;
+  /* 1200px */
+  height: 500px;
+}
+.portfolio .people-photos .four-photos-high img {
+  width: 25%;
+  height: 500px;
+}
+.portfolio .people-photos .four-photos-high img:hover {
+  background-color: #66CDAA;
+  opacity: .3;
+}
+.portfolio .people-photos .four-photos-square {
+  display: flex;
+  width: 100%;
+}
+.portfolio .people-photos .four-photos-square img {
+  width: 25%;
+  height: 300px;
+}
+.portfolio .people-photos .four-photos-square img:hover {
+  background-color: #66CDAA;
+  opacity: .3;
+}
+.portfolio .people-photos .three-photos {
+  display: flex;
+  width: 100%;
+}
+.portfolio .people-photos .three-photos img {
+  width: 25%;
+  height: 300px;
+}
+.portfolio .people-photos .three-photos img:hover {
+  background-color: #66CDAA;
+  opacity: .3;
+}
+.portfolio .people-photos .three-photos .raspberry {
+  width: 50%;
+  height: 300px;
+}
+.portfolio .people-photos .three-photos .raspberry:hover {
+  background-color: #66CDAA;
+  opacity: .3;
+}
+.portfolio .people-photos .three-photos-footer {
+  display: flex;
+  width: 100%;
+}
+.portfolio .people-photos .three-photos-footer img {
+  width: 25%;
+  height: 300px;
+}
+.portfolio .people-photos .three-photos-footer img:hover {
+  background-color: #66CDAA;
+  opacity: .3;
+}
+.portfolio .people-photos .three-photos-footer .dreamcatcher {
+  width: 50%;
+  height: 300px;
+}
+.portfolio .people-photos .three-photos-footer .dreamcatcher:hover {
+  background-color: #66CDAA;
+  opacity: .3;
+}
+/*============= Sunshine section =============*/
+.section.sunshine {
+  background: url("img/sunshine.png") 0px -300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sunshine .content {
+  font-weight: bold;
+}
+.sunshine .medium {
+  font-size: 36px;
+  text-align: center;
+  width: 800px;
+  margin: auto;
+}
+.sunshine .smaller {
+  font-size: 24px;
+  padding-left: 780px;
+  padding-bottom: 50px;
+  margin: 0;
+}
+.sunshine .fa-quote-left {
+  padding-top: 50px;
+  padding-left: 50px;
+}
+.sunshine .fa-quote-right {
+  padding-left: 900px;
+}
+/*============= News section =============*/
+.section.news {
+  background-color: #C0C0C0;
+}
+.news {
+  font-family: 'Open Sans', sens-serif;
+}
+.news h2 {
+  font-family: 'BebasNeue', sens-serif;
+  font-size: 48px;
+  text-align: center;
+  margin: 0;
+  padding-top: 60px;
+  color: black;
+}
+.news .news-left {
+  float: left;
+  width: 500px;
+}
+.news .news-left .date {
+  background-color: #66CDAA;
+  display: inline-block;
+}
+.news .news-left .date p {
+  margin: 0;
+  padding: 3px 25px;
+}
+.news .news-left .fa-tags {
+  color: #66CDAA;
+  margin-left: 190px;
+}
+.news .news-left .orange-text {
+  color: #FF4500;
+  display: inline-block;
+}
+.news .news-left .right {
+  padding-left: 350px;
+  padding-bottom: 70px;
+}
+.news .news-left .right a {
+  color: inherit;
+  text-decoration: none;
+}
+.news .news-left .right a:hover {
+  text-decoration: underline;
+}
+.news .news-left .green {
+  color: #66CDAA;
+}
+.news .news-left .grey {
+  color: grey;
+}
+.news .news-left img {
+  width: 100%;
+}
+.news .news-right {
+  float: right;
+  width: 390px;
+}
+.news .news-right ul {
+  padding: 0;
+  margin-bottom: 70px;
+}
+.news .news-right li {
+  display: inline-block;
+  list-style: none;
+  padding: 1px 10px;
+  background-color: #66CDAA;
+  margin-bottom: 10px;
+}
+.news .news-right li:hover {
+  background-color: #FF4500;
+}
+.news .news-right li a {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+}
+.news .news-right .green {
+  color: #66CDAA;
+  font-family: 'BebasNeue', sens-serif;
+  font-size: 18px;
+}
+.news .news-right .italic {
+  font-style: italic;
+  font-size: 20px;
+  color: grey;
+}
+.news .news-right .blog {
+  font-family: Arial;
+  color: black;
+}
+.news .news-right .comment {
+  color: black;
+}
+.news .news-right .comment img {
+  border-radius: 3px;
+  float: left;
+  margin-right: 10px;
+}
+.news .news-right .comment-date {
+  color: #FF4500;
+  display: block;
+}
+/*============= Firms-logos section =============*/
+.section.firms-logos {
+  background-color: #A9A9A9;
+}
+.firms-logos img {
+  width: 150px;
+  margin: 60px 40px;
+  opacity: 0.2;
+}
+/*============= Bio section =============*/
+.section.bio {
+  background-color: #FF6347;
+}
+#bio {
+  font-family: 'BebasNeue', sens-serif;
+  font-size: 48px;
+  color: black;
+  text-align: center;
+}
+.bio {
+  font-family: 'Open Sans', sens-serif;
+}
+.bio .bio-left {
+  float: left;
+  width: 300px;
+}
+.bio .bio-left .icons {
+  position: relative;
+  top: -100px;
+  left: 50px;
+}
+.bio .bio-left .icons img {
+  width: 35px;
+  margin-left: 10px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.bio .bio-left .icons .linkedin:hover {
+  background-color: #1E90FF;
+}
+.bio .bio-left .icons .facebook:hover {
+  background-color: #4169E0;
+}
+.bio .bio-left .icons .unknown:hover {
+  background-color: #228B22;
+}
+.bio .bio-left .icons .twitter:hover {
+  background-color: #87CEFA;
+}
+.bio .bio-left .medium {
+  font-family: 'BebasNeue', sens-serif;
+  text-align: center;
+  font-size: 36px;
+}
+.bio .bio-left .white-circle {
+  background-color: white;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+.bio .bio-left .monkey {
+  position: relative;
+  top: -170px;
+  right: -70px;
+}
+.bio .bio-right {
+  float: right;
+  width: 450px;
+}
+/*============= Footer section =============*/
+.section.footer {
+  background: url("img/bridge.png") no-repeat center -100px;
+  background-size: cover;
+}
+.footer {
+  font-family: 'BebasNeue', sens-serif;
+  text-align: center;
+  font-weight: bold;
+}
+.footer #contacts {
+  font-size: 48px;
+  margin: 0;
+  padding-top: 50px;
+  padding-bottom: 0;
+  color: black;
+}
+.footer .tel {
+  font-size: 48px;
+  margin-top: 35px;
+  margin-bottom: 15px;
+}
+.footer .with-border {
+  width: 650px;
+  border: 4px solid white;
+  margin: 0 auto;
+  font-size: 60px;
+}
+.footer .medium {
+  font-size: 30px;
+  margin-top: 20px;
+  font-weight: normal;
+}
+.footer .capitalize {
+  font-family: 'Open Sans';
+  font-size: 14px;
+  padding-top: 100px;
+  padding-bottom: 20px;
+  margin: 0;
+}
+.footer .capitalize .fa-copyright {
+  margin-right: 5px;
+}
+/*============ Clearfix ============*/
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.cf:after {
+  clear: both;
+}
+.cf {
+  *zoom: 1;
+}
